@@ -3,6 +3,11 @@
 
 ## Write a short comment describing this function
 
+## following makeCacheMatrix function takes square matrix as an input argument
+## This function sets and gets the input matrix 
+## it also help in caching the inveresed matrix with the help of setinverse (for setting in cache)
+## and get inverse for getting from cache 
+
 makeCacheMatrix <- function(x = matrix()) {
   
   #holds cache value of inversed matrix, initially set to null
@@ -36,6 +41,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## This function gets input matrix, then looks if the inversed result is already cached
+## if cached then return cached matrix
+## or else compute new result, cache it and return computed matrix
 
 cacheSolve <- function(x=matrix(), ...) {
   
